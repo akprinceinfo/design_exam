@@ -12,8 +12,8 @@
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
+    overflow-y: hidden;
     overflow-x: auto;
-    overflow-y: auto;
 }
 
 .header {
@@ -155,7 +155,7 @@ section.nav-section {
 .content-area {
     /* background: #2a70d9; */
     width: 330px;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,6 +165,9 @@ section.nav-section {
 .card-ditels-left p {
     color: #666666;
 }
+
+
+/* Scroll bar design  */
 
 
 /* width */
@@ -191,20 +194,23 @@ section.nav-section::-webkit-scrollbar-thumb {
     width: 5px;
 }
 
+.scroll.nav-section::-webkit-scrollbar-thumb {
+    background: #0070bd;
+    border-radius: 10px;
+    height: 70%;
+    width: 5px;
+}
 
-/* 
-::-webkit-scrollbar {
-    width: 12px;
-} */
+.container::-webkit-scrollbar {
+    height: 8px;
+    background: #0070bd;
+}
 
+.container::-webkit-scrollbar-track {
+    background-color: #bbbbbb;
+}
 
-/* 
-::-webkit-scrollbar-track {
-    background-color: #f5f5f5;
-} */
-
-
-/* 
-::-webkit-scrollbar-thumb:hover {
-    background-color: #a0a0a0;
-} */
+.container::-webkit-scrollbar-thumb {
+    background-color: #0070bd;
+    border-radius: 10px;
+}
