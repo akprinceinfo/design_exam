@@ -10,6 +10,10 @@
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .header {
@@ -21,14 +25,34 @@
     display: flex;
 }
 
+section.nav-section {
+    overflow-y: scroll;
+}
+
 .header-content {
     height: 23px;
     display: flex;
     justify-content: space-between;
     border-radius: 30px 0 0px 30px;
-    border-left: 20px solid #d21010;
     background: #f2f4f7;
     width: 330px;
+}
+
+.Incomplete {
+    border-left: 20px solid #d21010;
+}
+
+.to-do {
+    border-left: 20px solid #00b5ff;
+}
+
+.doing {
+    border-left: 20px solid #ffe700;
+    border-radius: 10px;
+}
+
+.under_review {
+    border-left: 20px solid #00b5ff;
 }
 
 .header-right {
@@ -129,16 +153,58 @@
 }
 
 .content-area {
-    background: #f2f4f7;
-    width: 360px;
+    /* background: #2a70d9; */
+    width: 330px;
     height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
 }
 
 .card-ditels-left p {
     color: #666666;
 }
+
+
+/* width */
+
+section.nav-section::-webkit-scrollbar {
+    width: 6px;
+}
+
+
+/* Track */
+
+section.nav-section::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+section.nav-section::-webkit-scrollbar-thumb {
+    background: #0070bd;
+    border-radius: 10px;
+    height: 80%;
+    width: 5px;
+}
+
+
+/* 
+::-webkit-scrollbar {
+    width: 12px;
+} */
+
+
+/* 
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+} */
+
+
+/* 
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a0;
+} */
