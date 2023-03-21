@@ -7,7 +7,6 @@
 }
 
 .container {
-    padding: 2%;
     width: 100vw;
     height: 100vh;
     background-color: #ffffff;
@@ -15,9 +14,9 @@
 
 .header {
     height: 60px;
-    width: 338px;
+    width: 330px;
     align-items: center;
-    padding: 0 15px;
+    padding: 15px 15px;
     background-color: #f2f4f7;
     display: flex;
 }
@@ -49,9 +48,14 @@
 }
 
 .card {
-    width: 340px;
+    width: 330px;
     height: 130px;
-    /* background-color: aqua; */
+    margin-bottom: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 0;
 }
 
 .card-client-name-left {
@@ -73,7 +77,7 @@
 .card-client-name {
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 5px 10px;
     /* background: bisque; */
 }
 
@@ -104,7 +108,7 @@
 
 .card-footer {
     display: flex;
-    padding: 10px;
+    padding: 5px 10px;
     width: 100%;
 }
 
@@ -122,4 +126,19 @@
 
 .card-footer-right div i {
     padding: 0px 4px;
+}
+
+.content-area {
+    background: #f2f4f7;
+    width: 360px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-ditels-left p {
+    color: #666666;
 }
