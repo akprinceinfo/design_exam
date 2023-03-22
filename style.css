@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +7,14 @@
     text-decoration: none;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
-    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     overflow-y: hidden;
@@ -109,25 +114,40 @@ section.nav-section {
     width: 80%;
     display: flex;
     gap: 5px;
+    align-items: center;
+}
+
+.card-ditels-left p {
+    white-space: nowrap;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666666;
 }
 
 .card-ditels-right {
-    width: 20%;
+    width: 50px;
     display: flex;
     gap: 5px;
     justify-content: flex-end;
+    align-items: center;
+    background: #e3e6eb;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .card-ditels {
     display: flex;
     padding: 10px 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card-footer-left {
     display: flex;
     align-items: center;
     width: 25%;
-    gap: 10px;
+    gap: 15px;
 }
 
 .card-footer {
@@ -138,6 +158,7 @@ section.nav-section {
 
 .card-footer-right div {
     display: flex;
+    align-items: center;
 }
 
 .card-footer-right {
@@ -153,17 +174,12 @@ section.nav-section {
 }
 
 .content-area {
-    /* background: #2a70d9; */
-    width: 330px;
-    /* height: 100vh; */
+    background: #f2f4f7;
+    width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 10px;
-}
-
-.card-ditels-left p {
-    color: #666666;
 }
 
 
