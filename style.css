@@ -217,6 +217,13 @@ section.nav-section::-webkit-scrollbar-thumb {
     width: 5px;
 }
 
+.scroll-b::-webkit-scrollbar-thumb {
+    background: #0070bd;
+    border-radius: 10px;
+    height: 80%;
+    width: 5px;
+}
+
 .container-section::-webkit-scrollbar {
     height: 8px;
     background: #0070bd;
@@ -232,29 +239,6 @@ section.nav-section::-webkit-scrollbar-thumb {
 }
 
 
-/* Set a style for all buttons */
-
-
-/* button {
-    background-color: #04aa6d;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-button:hover {
-    opacity: 1;
-} */
-
-button {
-    border: none;
-}
-
-
 /* Float cancel and delete buttons and add an equal width */
 
 .cancelbtn,
@@ -267,8 +251,8 @@ button {
 /* Add a color to the cancel button */
 
 .cancelbtn {
-    background-color: #ccc;
-    color: black;
+    background-color: #e21c1c;
+    color: white;
     padding: 10px 0;
     cursor: pointer;
 }
@@ -277,7 +261,7 @@ button {
 /* Add a color to the delete button */
 
 .deletebtn {
-    background-color: #f44336;
+    background-color: #1eff16;
     padding: 10px 0;
     cursor: pointer;
 }
@@ -329,6 +313,10 @@ hr {
     margin-bottom: 25px;
 }
 
+button {
+    border: none;
+}
+
 
 /* The Modal Close Button (x) */
 
@@ -359,9 +347,21 @@ hr {
 
 /* Change styles for cancel button and delete button on extra small screens */
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
     .cancelbtn,
     .deletebtn {
         width: 100%;
+    }
+    .modal {
+        width: 85%;
+    }
+    .close {
+        right: 20px;
     }
 }
